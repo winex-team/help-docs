@@ -1,64 +1,241 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
-    <title>Winex.pro</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+    <link rel="shortcut icon" href="images/favicon/favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon/favicon.png" type="image/x-icon">
+
+    <title>Home</title>
+	
+    <!--Library Styles-->    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/lib/font-awesome.css" rel="stylesheet">
+    <link href="css/lib/nivo-lightbox.css" rel="stylesheet">
+    <link href="css/lib/nivo-themes/default/default.css" rel="stylesheet">
+	
+    <!--Template Styles-->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/scheme/purple.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+
+
+    <![endif]-->
 </head>
-<body>
-    <h>Winex简介</h>
-    <p>Winex是一个去中心化交易所，你可以理解是运行在区块链上的交易所，用户的资产管理和交易撮合，都通过区块链技术完成，所以绝对的公正，公开和透明。
-        Winex交易所内目前有WIN.HSR 和 WIN.ETC 对bitCNY的交易对，WIN.HSR和WIN.ETC是HSR和ETC在内盘的代币名称。</p>
-    <h>如何注册</h>
-    <p>1、使用PC浏览器访问https://www.winex.pro，点击“立即开启交易”，进入交易所页面
-        缺图1
 
+<body data-spy="scroll">
 
-2、点击创建用户，填写你的账号名，账号名请是用户英文字母与数字组合，或者有一个“-”。
-这里注册不需要用户手机号或者邮箱，区块链的世界是自由的。
-记录下系统为你生成的唯一密码，复制并确认之后，勾选底部的三个重要提示。丢失账户和密码，任何人都无法恢复，资产将无法找回。
-<img src="https://winex-team.github.io/help-docs/注册1.png"><img src="https://winex-team.github.io/help-docs/注册2.png">
-
-3、再次提醒你记录账户密码，请认真阅读。如果已经记录好，直接点“OK,take me to the dashboard"，进入你的账户页面
-<img src="https://winex-team.github.io/help-docs/注册3.png">
-    </p>
-    
-    <h>认识交易所</h>
-    <p>1、交易所主面板
-显示当前交易所热门的交易对
-<img src="https://winex-team.github.io/help-docs/主面板4.png">
-2、账户，显示你的资产情况，包括资产列表，委单，抵押的债仓，以及账户的动态信息
-<img src="https://winex-team.github.io/help-docs/账户5.png">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status"></div>
+    </div>
+	
+    <div id="main-wrapper">
         
-3、转账，可以指定对方账号，直接转资产给对方
-<img src="https://winex-team.github.io/help-docs/转账6.png">
-    
-        </p>
-    
-    <h>如何充值ETC</h>
-    <p>1、以ETC为例，想要进入内盘交易，先要将钱包里的ETC充值进入内盘。
-选择充提提现，选择Winex承兑商，再找到ETC，生成充值地址。
-<img src="https://winex-team.github.io/help-docs/ETC充值.png">
+        <!-- Site Navigation -->
+        <div id="menu">
+            <nav class="navbar navbar-default" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html#">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                </div>
 
-2、在zb网站，找到ETC提币的页面
-<img src="https://winex-team.github.io/help-docs/zb提ETC.png">
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a class="sscroll" href="index.html#home">简介</a></li>
+                        <li><a class="sscroll" href="index.html#register">如何注册</a></li>
+                        <li><a class="sscroll" href="index.html#portfolio">认识交易所</a></li>
+                        <li><a class="sscroll" href="index.html#deposit">如何充值ETC</a></li>
+                        <li><a class="sscroll" href="index.html#deposit_cny">如何充值bitCNY？</a></li>
+                        <li><a class="sscroll" href="index.html#withdraw">提现内盘的代币</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+        </div>
         
-将zb的ETC提币到你第1步生成的地址上。
+        <div id="container">
+            <!-- BEGIN HOME -->
+            <section id="home" class="home">
+                <!-- Superslides -->
+                <div id="home-slide">
+                    <ul class="slides-container text-center">
+                        <li>
+                            <div class="slide-text">
+                                <h2>Winex简介</h2>
+                                <span>Winex是一个去中心化交易所，你可以理解是运行在区块链上的交易所，用户的资产管理和交易撮合，都通过区块链技术完成，所以绝对的公正，公开和透明。
+        Winex交易所内目前有WIN.HSR 和 WIN.ETC 对bitCNY的交易对，WIN.HSR和WIN.ETC是HSR和ETC在内盘的代币名称。</span>
+                                <br/>
+                                <div class="row">
+                                    <div class="col-md-12 text-center">
+                                        <a class="btn blog-btn" href="https://www.winex.pro">访问官网</a>
+                                    </div>
+                                </div>
+                            </div>
+                          <div class="slide-filter"></div>
+                            <img src="images/slider/slide-1.jpg" class="par" alt="first">
+                        </li>
+                        <li>
+                            <div class="slide-text">
+                                <h2>Winex简介</h2>
+                                <span>Winex是一个去中心化交易所，你可以理解是运行在区块链上的交易所，用户的资产管理和交易撮合，都通过区块链技术完成，所以绝对的公正，公开和透明。
+        Winex交易所内目前有WIN.HSR 和 WIN.ETC 对bitCNY的交易对，WIN.HSR和WIN.ETC是HSR和ETC在内盘的代币名称。</span>
+                                <br/>
+                                <div class="row">
+                                    <div class="col-md-12 text-center">
+                                        <a class="btn blog-btn" href="https://www.winex.pro">访问官网</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-filter"></div>
+                            <img src="https://winex-team.github.io/help-docs/images/slider/slide-1.jpg" class="par" alt="first">
+                        </li>
 
-其他的币种充值都类似。
-        
-    </p>
-    
-    <h>如何充值bitCNY？</h>
-    <p>bitCNY是人民币在内盘的代币名称，他和人民币是1：1锚定。目前提供充值bitCNY有比特帝国和鼓鼓钱包，比特帝国是国内比较早的内盘交易所，充值bitCNY是通过人人承兑方式。地址：http://btsabc.org/wall.php，找到对应的人进行聊天确认。</p>
-    
-    <h>内盘的代币，如何提到自己的钱包？</h>
-    <p>1、在充值提现页面，找到Winex网关，选择你要提币的种类ETC，选择提现，点击确认。
-<img src="https://winex-team.github.io/help-docs/ETC提币.png">
+                    </ul>
+                </div>
+                <!-- End of Superslide -->
+            </section>
+            <!-- END HOME -->
+            
+            <!-- BEGIN SERVICES -->
+            <section id="register" class="register">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header-content">
+                            <h2>如何注册</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <h3>点击创建用户，填写你的账号名，账号名请是用户英文字母与数字组合，或者有一个“-”。
+                            这里注册不需要用户手机号或者邮箱，区块链的世界是自由的。
+                            记录下系统为你生成的唯一密码，复制并确认之后，勾选底部的三个重要提示。丢失账户和密码，任何人都无法恢复，资产将无法找回。</h3>
+                        <img class="demo_img" src="https://winex-team.github.io/help-docs/注册1.png"/>
+                        <img class="demo_img" src="https://winex-team.github.io/help-docs/注册2.png"/>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="header-content">
+                            <h2>再次提醒你记录账户密码，请认真阅读。如果已经记录好，直接点“OK,take me to the dashboard"，进入你的账户页面</h2>
+                        </div>
+                        <img class="demo_img" src="https://winex-team.github.io/help-docs/注册3.png" />
+                    </div>
+                </div>
+            </section>
+            <!-- END SERVICES -->
+            <!-- BEGIN PORTFOLIO -->
+            <section id="portfolio" class="portfolio gray">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header-content">
+                            <h2>认识交易所</h2>
+                            <h3>交易所主面板显示当前交易所热门的交易对</h3>
+                        </div>
+                    </div>
+                    <img class="demo_img" src="主面板4.png">
+                    <div class="col-md-12">
+                        <div class="header-content">
+                            <h3>账户，显示你的资产情况，包括资产列表，委单，抵押的债仓，以及账户的动态信息</h3>
+                        </div>
+                    </div>
+                    <img class="demo_img" src="账户5.png">
+                    <div class="col-md-12">
+                        <div class="header-content">
+                            <h3>转账，可以指定对方账号，直接转资产给对方</h3>
+                        </div>
+                    </div>
+                    <img class="demo_img" src="https://winex-team.github.io/help-docs/转账6.png" />
+                </div>
+            </section>
 
-2、填写相应的信息后，提交确认
-        <img src="https://winex-team.github.io/help-docs/etcwithdraw2.png">
-注意，如果自己账户没有BTS,则可以选择WIN.ETC来付网络手续费
-        
-    </p>
+            <section id="deposit" class="deposit">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header-content">
+                            <h2>如何充值ETC</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <h3>以ETC为例，想要进入内盘交易，先要将钱包里的ETC充值进入内盘。
+                            选择充提提现，选择Winex承兑商，再找到ETC，生成充值地址。</h3>
+                        <img class="demo_img" src="https://winex-team.github.io/help-docs/ETC充值.png"/>
+                    </div>
+                    <div class="col-md-12">
+                        <h3>以在zb网站，找到ETC提币的页面</h3>
+                        <img  class="demo_img"  src="https://winex-team.github.io/help-docs/zb提ETC.png">
+                    </div>
+                    <div class="col-md-12">
+                        <h3>将zb的ETC提币到你第1步生成的地址上。<br/>其他的币种充值都类似。</h3>
+                        <img  class="demo_img"  src="https://winex-team.github.io/help-docs/zb提ETC.png">
+                    </div>
+                </div>
+            </section>
+            <section id="withdraw" class="withdraw">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header-content">
+                            <h2>提现内盘的代币</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <h3>在充值提现页面，找到Winex网关，选择你要提币的种类ETC，选择提现，点击确认。</h3>
+                        <img class="demo_img" src="https://winex-team.github.io/help-docs/ETC提币.png"/>
+                    </div>
+                    <div class="col-md-12">
+                        <h3>填写相应的信息后，提交确认</h3>
+                        <img  class="demo_img"  src="https://winex-team.github.io/help-docs/ETC提币2.png" />
+                    </div>
+                    <div class="col-md-12">
+                        <h3>注意，如果自己账户没有BTS,则可以选择WIN.ETC来付网络手续费</h3>
+                    </div>
+                </div>
+            </section>
+    </div>
+
+
+    <!-- Back to top -->
+    <div id="backtotop">       
+        <a class="to-top-btn sscroll" href="index.html#home"><i class="fa fa-angle-double-up"></i></a>
+    </div>
+
+
+    <!-- Library Scripts -->
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/lib/jquery.preloader.js"></script>
+    <script src="js/lib/nivo-lightbox.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/lib/jquery.superslides.min.js"></script>
+    <script src="js/lib/smoothscroll.js"></script>
+    <script src="js/lib/jquery.sudoslider.min.js"></script>
+    <script src="js/lib/jquery.bxslider.min.js"></script>
+    <script src="js/lib/jquery.mixitup.min.js"></script>
+    <script src="js/lib/jquery.backtotop.js"></script>
+    <script src="js/lib/jquery.carouFredSel-6.2.1-packed.js"></script>
+    <script src="js/lib/retina.min.js"></script>
+
+    <!-- Custom Script -->    
+    <script src="js/main.js"></script>
+
+
+    <style type="text/css">
+        .demo_img {
+            width: 100%;
+            padding-top:10px;
+        }
+    </style>
 </body>
+
 </html>
